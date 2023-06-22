@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title></title>
+    </head>
+    <body>
+        <script>
+            window.onload = function(){
+                getMarks();
+            }
+           function getMarks(){
+            var total = 0;
+            for(var i=0; i<5; i++){
+                var marks = parseInt(window.prompt("Enter Marks:"));
+                total += marks;
+            }
+            //window.createElement("button")
+            document.write("total: ",total);
+            document.write("<br>");
+            document.write("average: ",total/5);
+
+            var button = document.createElement("button");
+            button.innerHTML = "Grade";
+            button.oneclick = function(){
+                if(average > 30){
+                    window.alert("Congrats!");
+                }
+                else{
+                    window.alert("Better luck next time!");
+                }
+            };
+            document.body.appendChild(button);
+           } 
+        </script>
+    </body>
+</html>
