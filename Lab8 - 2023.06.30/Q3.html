@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input id="rr" type="button" value="Red">
+    <input id="gr" type="button" value="green">
+    <input id="bl" type="button" value="blue">
+    <script>
+        var rr = document.getElementById("rr");
+        var gr = document.getElementById("gr");
+        var bl = document.getElementById("bl");
+        rr.onmouseover = function(){
+            document.body.style.backgroundColor = "red";
+        }
+        gr.onmouseover = function(){
+            document.body.style.backgroundColor = "green";
+        }
+        bl.onmouseover = function(){
+            document.body.style.backgroundColor = "blue";
+        }
+        rr.onmouseout = function(){
+            document.body.style.backgroundColor = "white";
+        }
+        gr.onmouseout = function(){
+            document.body.style.backgroundColor = "white";
+        }
+        bl.onmouseout = function(){
+            document.body.style.backgroundColor = "white";
+        }
+    </script>
+</body>
+</html>

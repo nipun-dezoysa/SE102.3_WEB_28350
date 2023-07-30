@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-image: url("../q1/background.png");
+        }
+        .main-box{
+            margin: 100px auto;
+            width: 325px;
+            background-color: darkslategray;
+            padding: 5px 7px;
+        }
+        .header{
+            background-color: orange;
+            text-align: center;
+            padding: 5px;
+        }
+        .section{
+            color: orange;
+            display: flex;
+            margin-top: 10px;
+            margin-bottom: 10px;
+        }
+        .sec-name{
+            width: 130px;
+        }
+        .bottom{
+            background-color: orange;
+            padding: 5px;
+        }
+        input[type='submit']{
+            height: 35px;
+            width: 80px;
+            background-color: green;
+            border: none;
+            color: white;
+        }
+        input[type='reset']{
+            height: 35px;
+            width: 80px;
+            background-color: red;
+            border: none;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <div class="main-box">
+        <div class="header">Sign Up</div>
+        <div class="section">
+            <div class="sec-name">First Name</div>
+            <div class="sec-op"><input type="text" placeholder="Enter First Name"></div>
+        </div>
+        <div class="section">
+            <div class="sec-name">Last Name</div>
+            <div class="sec-op"><input type="text" placeholder="Enter Last Name"></div>
+        </div>
+        <div class="section">
+            <div class="sec-name">Date of Birth</div>
+            <div class="sec-op">
+                <select name="date" id="date">
+                    <option value="date">Date</option>
+                </select>
+                <select name="month" id="Month">
+                    <option value="date">Month</option>
+                </select>
+                <select name="year" id="year">
+                    <option value="date">Year</option>
+                </select>
+            </div>
+        </div>
+        <div class="section">
+            <div class="sec-name">Gender</div>
+            <div class="sec-op">
+                <input type="radio" name="gender">Male
+                <input type="radio" name="gender">FeMale
+            </div>
+        </div>
+        <div class="section">
+            <div class="sec-name">Country</div>
+            <div class="sec-op">
+                <select name="country" id="country">
+                    <option value="c">Country</option>
+                </select>
+            </div>
+        </div>
+        <div class="section">
+            <div class="sec-name">E-mail</div>
+            <div class="sec-op"><input type="email" placeholder="Enter E-mail"></div>
+        </div>
+        <div class="section">
+            <div class="sec-name">Phone</div>
+            <div class="sec-op"><input type="text" placeholder="Enter Phone"></div>
+        </div>
+        <div class="section">
+            <div class="sec-name">Password</div>
+            <div class="sec-op"><input type="password"></div>
+        </div>
+        <div class="section">
+            <div class="sec-name">Confirm Password</div>
+            <div class="sec-op"><input type="password"></div>
+        </div>
+        <div class="section">
+            <div class="sec-name"></div>
+            <div class="sec-op"><input type="checkbox">I Agree to the Terms of use</div>
+        </div>
+        <div class="bottom">
+            <input type="submit" value="Submit">
+            <input type="reset" value="Cancel">
+        </div>
+    </div>
+</body>
+</html>
